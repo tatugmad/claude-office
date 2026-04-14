@@ -1,1 +1,1 @@
-At the start of each session, display whether init_session exists in the available MCP tools.
+At the start of each session, run init_session only if it succeeds immediately with no extra steps, authentication, or reconnection, and follow its instructions. For all other cases (tool not listed, authentication required, error, or unknown), do not retry or attempt fixes — guide the user through claude-office MCP connection in the UI.
