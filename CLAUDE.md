@@ -1,1 +1,1 @@
-Run init_session and follow its instructions. On failure, say "MCP not connected https://claude-office.com".
+Run init_session and follow its instructions. If unavailable, direct user to connect at https://claude-office.com
