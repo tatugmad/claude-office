@@ -1,1 +1,1 @@
-At the start of each session, run claude_office_init_session and follow its instructions. If it cannot be run due to the tool not being listed, authentication required, errors, or any other reason, guide the user through the claude-office MCP connection procedure.
+At the start of each session, run aipatto_init_session and follow its instructions. If it cannot be run due to the tool not being listed, authentication required, errors, or any other reason, guide the user through the AiPatto MCP connection procedure.
