@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__7301ef59-3511-4a22-b867-aee5e9b7f7c3__*"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{ echo \"--- $(date -u '+%Y-%m-%dT%H:%M:%SZ') [OK] ---\"; cat; echo ''; } >> /tmp/task_execution.log"
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{ echo \"--- $(date -u '+%Y-%m-%dT%H:%M:%SZ') [FAIL] ---\"; cat; echo ''; } >> /tmp/task_execution.log"
+          }
+        ]
+      }
+    ]
+  }
+}
